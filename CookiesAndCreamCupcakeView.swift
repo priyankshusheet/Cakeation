@@ -16,7 +16,7 @@ struct CookiesAndCreamCupcakeView: View {
 
     var body: some View {
             ZStack {
-                // Background Gradient
+
                 LinearGradient(
                     gradient: Gradient(colors: [Color.gray.opacity(0.2), Color.black.opacity(0.8)]),
                     startPoint: .top,
@@ -25,22 +25,22 @@ struct CookiesAndCreamCupcakeView: View {
                 .edgesIgnoringSafeArea(.all)
 
                 VStack(alignment: .leading, spacing: 20) {
-                    // Cupcake Image
-                    Image("cookies_cream") // Replace with your asset name
+
+                    Image("cookies_cream")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 250)
                         .cornerRadius(20)
                         .shadow(radius: 10)
 
-                    // Cupcake Title
+
                     Text("COOKIES & CREAM")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
 
 
-                    // Description
+
                     Text("A heavenly blend of crushed cookies and rich cream!")
                         .font(.subheadline)
                         .foregroundColor(.white)
@@ -73,7 +73,7 @@ struct CookiesAndCreamCupcakeView: View {
                         }
                     }
 
-                    // Price
+
                     HStack {
                         Spacer()
                         Text("₹120")
@@ -82,7 +82,7 @@ struct CookiesAndCreamCupcakeView: View {
                             .foregroundColor(.white)
                     }
 
-                    // Toppings
+
                     Text("Topping")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -111,9 +111,9 @@ struct CookiesAndCreamCupcakeView: View {
                         }
                     }
 
-                    // Order Button
+
                     Button(action: {
-                        // Add to cart action
+
                     }) {
                         Text("ORDER NOW")
                             .font(.headline)
