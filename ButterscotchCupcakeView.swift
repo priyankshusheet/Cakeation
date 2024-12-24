@@ -15,7 +15,7 @@ struct ButterscotchCupcakeView: View {
             .ignoresSafeArea()
 
             VStack(alignment: .leading, spacing: 20) {
-                Image("butterscotch") // Replace with your asset name
+                Image("butterscotch") 
                     .resizable()
                     .scaledToFit()
                     .frame(height: 250)
@@ -92,7 +92,7 @@ struct ButterscotchCupcakeView: View {
                 }
 
                 VStack(spacing: 10) {
-                    Button(action: { /* Add your action here */ }) {
+                    Button(action: {}) {
                         Text("ORDER NOW")
                             .font(.headline)
                             .frame(maxWidth: .infinity)
