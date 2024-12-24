@@ -14,12 +14,12 @@ struct CheckoutView: View {
 
     var body: some View {
         ZStack {
-            // Background Gradient
+
             LinearGradient(gradient: Gradient(colors: [Color.pink, Color.orange]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
 
             VStack(spacing: 0) {
-                // Header
+
                 Text("Checkout")
                     .font(.largeTitle)
                     .bold()
@@ -34,12 +34,12 @@ struct CheckoutView: View {
                         // Address Section
                         AddressSectionView(manualAddress: $manualAddress, location: locationManager)
                     }
-                    .padding(.bottom, 80) // To prevent content behind bottom bar
+                    .padding(.bottom, 80)
                 }
 
-                // Bottom Total and Button
+
                 BottomBarView(totalPrice: cart.totalPrice) {
-                    // Place Order Action
+
                     print("Order Placed")
                 }
             }
@@ -47,7 +47,7 @@ struct CheckoutView: View {
     }
 }
 
-// MARK: - Subviews
+
 
 // Cart Items View
 struct CartItemsView: View {
@@ -72,7 +72,7 @@ struct CartItemsView: View {
                         .foregroundColor(.black)
 
                     Button(action: {
-                        onRemove(item) // Remove item from cart
+                        onRemove(item) 
                     }) {
                         Image(systemName: "trash")
                             .foregroundColor(.red)
@@ -158,5 +158,5 @@ struct BottomBarView: View {
 
 #Preview {
     CheckoutView()
-        .environmentObject(CartManager()) // Pass environment object for preview
+        .environmentObject(CartManager()) 
 }
