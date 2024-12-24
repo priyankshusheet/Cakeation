@@ -81,9 +81,9 @@ struct ContentView: View {
         }
     }
 
-    // Function to start rotating and switch images
+
     func startRotating() {
-        // Timer to rotate every 2 seconds
+
         Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { _ in
             withAnimation {
                 currentIndex = (currentIndex + 1) % images.count // Cycle through images
@@ -92,7 +92,7 @@ struct ContentView: View {
     }
 }
 
-// Reusable Flavor Card Component
+
 struct FlavorCard: View {
     let imageName: String
     let flavorName: String
@@ -105,7 +105,7 @@ struct FlavorCard: View {
                 .shadow(radius: 5)
             
             VStack {
-                Image(imageName) // Replace with your asset names
+                Image(imageName)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 80)
