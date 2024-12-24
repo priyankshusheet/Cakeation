@@ -24,21 +24,21 @@ struct ChocolateCupcakeView: View {
             .ignoresSafeArea()
 
             VStack(alignment: .leading, spacing: 20) {
-                // Cupcake Image
-                Image("chocolate") // Replace with your actual image asset name
+
+                Image("chocolate")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 250)
                     .cornerRadius(20)
                     .shadow(radius: 10)
 
-                // Title
+
                 Text("CHOCOLATE & VANILLA")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
 
-                // Description
+
                 Text("Vanilla Cupcake with a Passion Fruit Filling Vanilla Buttercream Frosting")
                     .font(.subheadline)
                     .foregroundColor(.white)
