@@ -25,22 +25,22 @@ struct HazelnutCupcakeView: View {
                 .edgesIgnoringSafeArea(.all)
 
                 VStack(alignment: .leading, spacing: 20) {
-                    // Cupcake Image
-                    Image("hazelnut") // Replace with your asset name
+
+                    Image("hazelnut")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 300)
                         .cornerRadius(20)
                         .shadow(radius: 10)
 
-                    // Cupcake Title
+
                     Text("HAZELNUT")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding(.top, 10)
 
-                    // Description
+
                     Text("Indulge in the nutty richness of hazelnut!")
                         .font(.subheadline)
                         .foregroundColor(.white)
@@ -73,7 +73,7 @@ struct HazelnutCupcakeView: View {
                         }
                     }
 
-                    // Price
+
                     HStack {
                         Spacer()
                         Text("₹120")
@@ -82,7 +82,7 @@ struct HazelnutCupcakeView: View {
                             .foregroundColor(.white)
                     }
 
-                    // Toppings
+
                     Text("Topping")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -111,9 +111,9 @@ struct HazelnutCupcakeView: View {
                         }
                     }
 
-                    // Order Button
+
                     Button(action: {
-                        // Add to cart action
+
                     }) {
                         Text("ORDER NOW")
                             .font(.headline)
