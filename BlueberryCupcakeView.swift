@@ -26,7 +26,7 @@ struct BlueberryCupcakeView: View {
 
                 VStack(alignment: .leading, spacing: 20) {
                     // Cupcake Image
-                    Image("blueberry") // Replace with your asset name
+                    Image("blueberry") 
                         .resizable()
                         .scaledToFit()
                         .frame(height: 300)
