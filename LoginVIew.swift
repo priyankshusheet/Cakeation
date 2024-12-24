@@ -17,10 +17,10 @@ struct LoginView: View {
             VStack {
                 Spacer()
                 
-                // Back Button
+
                 HStack {
                     Button(action: {
-                        // Back Button Action
+
                     }) {
                         Image(systemName: "chevron.left")
                             .foregroundColor(.black)
@@ -30,7 +30,7 @@ struct LoginView: View {
                     Spacer()
                 }
                 
-                // Title
+
                 Text("Let’s get started\nsaving food!")
                     .font(.system(size: 28, weight: .bold))
                     .multilineTextAlignment(.center)
@@ -38,7 +38,7 @@ struct LoginView: View {
                     .padding(.horizontal, 20)
                     .padding(.top, 20)
                 
-                // Burger Image
+
                 Image("onboard")
                     .resizable()
                     .scaledToFit()
@@ -48,11 +48,11 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                // Buttons
+
                 VStack(spacing: 15) {
-                    // Continue with Apple
+
                     Button(action: {
-                        // Apple Login Action
+
                     }) {
                         HStack {
                             Image(systemName: "applelogo")
@@ -67,9 +67,9 @@ struct LoginView: View {
                         .cornerRadius(10)
                     }
                     
-                    // Continue with Facebook
+
                     Button(action: {
-                        // Facebook Login Action
+
                     }) {
                         HStack {
                             Image(systemName: "f.circle.fill")
@@ -84,9 +84,9 @@ struct LoginView: View {
                         .cornerRadius(10)
                     }
                     
-                    // Continue with Email
+
                     Button(action: {
-                        // Email Login Action
+
                     }) {
                         HStack {
                             Image(systemName: "envelope.fill")
@@ -103,7 +103,7 @@ struct LoginView: View {
                 }
                 .padding(.horizontal, 20)
                 
-                // Other Option
+
                 Text("Other")
                     .foregroundColor(.gray)
                     .font(.subheadline)
