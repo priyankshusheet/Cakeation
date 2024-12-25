@@ -16,7 +16,7 @@ struct HazelnutCupcakeView: View {
 
     var body: some View {
             ZStack {
-                // Background Gradient
+
                 LinearGradient(
                     gradient: Gradient(colors: [Color.brown.opacity(0.3), Color.orange.opacity(0.8)]),
                     startPoint: .top,
