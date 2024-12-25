@@ -24,27 +24,27 @@ struct StrawberryCupcakeView: View {
             .ignoresSafeArea()
 
             VStack(alignment: .leading, spacing: 20) {
-                // Cupcake Image
-                Image("strawberry") // Replace with your actual image asset name
+
+                Image("strawberry")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 250)
                     .cornerRadius(20)
                     .shadow(radius: 10)
 
-                // Title
+
                 Text("STRAWBERRY & VANILLA")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
 
-                // Description
+
                 Text("Vanilla Cupcake With A Passion Fruit Filling And Vanilla Buttercream Frosting")
                     .font(.subheadline)
                     .foregroundColor(.white)
                     .padding(.bottom, 10)
 
-                // Quantity Selector
+
                 HStack {
                     Text("Amount")
                         .font(.headline)
@@ -72,7 +72,7 @@ struct StrawberryCupcakeView: View {
                     }
                 }
 
-                // Price
+
                 HStack {
                     Spacer()
                     Text("₹80")
@@ -81,7 +81,7 @@ struct StrawberryCupcakeView: View {
                         .foregroundColor(.white)
                 }
 
-                // Toppings
+
                 Text("Topping")
                     .font(.headline)
                     .foregroundColor(.white)
@@ -110,10 +110,10 @@ struct StrawberryCupcakeView: View {
                     }
                 }
 
-                // Buttons
+
                 VStack(spacing: 10) {
                     Button(action: {
-                        // Add to cart action
+
                     }) {
                         Text("ORDER NOW")
                             .font(.headline)
