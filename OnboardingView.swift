@@ -11,7 +11,7 @@ struct OnboardingView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                // Background Color
+
                 Color(.systemGreen)
                     .edgesIgnoringSafeArea(.all)
                 
@@ -27,7 +27,7 @@ struct OnboardingView: View {
                     
                     Spacer()
                     
-                    // Title Text
+
                     Text("Our food delivery app brings your favourite dishes to you.")
                         .font(.title)
                         .fontWeight(.semibold)
@@ -35,7 +35,7 @@ struct OnboardingView: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 30)
                     
-                    // Subtitle Text
+
                     Text("With our user-friendly food delivery app, you will enjoy the ultimate convenience.")
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
@@ -45,7 +45,7 @@ struct OnboardingView: View {
                     
                     Spacer()
                     
-                    // Buttons
+
                     HStack(spacing: 20) {
                         NavigationLink (destination: LoginView()) {
                             Text("Log in")
@@ -71,7 +71,7 @@ struct OnboardingView: View {
                     
                     Spacer()
                     
-                    // Page Indicator
+
                     HStack(spacing: 5) {
                         Circle().fill(Color.white.opacity(0.5)).frame(width: 8, height: 8)
                         Circle().fill(Color.white.opacity(0.5)).frame(width: 8, height: 8)
