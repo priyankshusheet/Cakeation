@@ -22,7 +22,7 @@ struct RedVelvetCupcakeView: View {
             .ignoresSafeArea()
 
             VStack(alignment: .leading, spacing: 20) {
-                Image("red_velvet") // Replace with your asset name
+                Image("red_velvet") 
                     .resizable()
                     .scaledToFit()
                     .frame(height: 250)
@@ -99,7 +99,7 @@ struct RedVelvetCupcakeView: View {
                 }
 
                 VStack(spacing: 10) {
-                    Button(action: { /* Add your action here */ }) {
+                    Button(action: { }) {
                         Text("BUY NOW")
                             .font(.headline)
                             .frame(maxWidth: .infinity)
