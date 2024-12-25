@@ -16,7 +16,7 @@ struct MangoCupcakeView: View {
 
     var body: some View {
             ZStack {
-                // Background Gradient
+
                 LinearGradient(
                     gradient: Gradient(colors: [Color.yellow.opacity(0.4), Color.orange.opacity(0.6)]),
                     startPoint: .top,
@@ -25,22 +25,22 @@ struct MangoCupcakeView: View {
                 .edgesIgnoringSafeArea(.all)
 
                 VStack(alignment: .leading, spacing: 20) {
-                    // Cupcake Image
-                    Image("mango") // Replace with your asset name
+
+                    Image("mango") 
                         .resizable()
                         .scaledToFit()
                         .frame(height: 300)
                         .cornerRadius(20)
                         .shadow(radius: 10)
 
-                    // Cupcake Title
+
                     Text("MANGO")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding(.top, 10)
 
-                    // Description
+
                     Text("Dive into tropical paradise with our Mango Cupcake!")
                         .font(.subheadline)
                         .foregroundColor(.white)
@@ -73,7 +73,7 @@ struct MangoCupcakeView: View {
                         }
                     }
 
-                    // Price
+
                     HStack {
                         Spacer()
                         Text("₹70")
@@ -82,7 +82,7 @@ struct MangoCupcakeView: View {
                             .foregroundColor(.white)
                     }
 
-                    // Toppings
+
                     Text("Topping")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -110,9 +110,9 @@ struct MangoCupcakeView: View {
                             }
                         }
                     }
-                    // Order Button
+
                     Button(action: {
-                        // Add to cart action
+
                     }) {
                         Text("ORDER NOW")
                             .font(.headline)
