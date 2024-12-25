@@ -11,15 +11,15 @@ struct SignUpView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                // Background Color
+
                 Color.yellow
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     Spacer()
                     
-                    // Pizza Image
-                    Image("graphic") // Replace with the actual image asset name
+
+                    Image("graphic")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 300)
@@ -27,7 +27,7 @@ struct SignUpView: View {
                     
                     Spacer()
                     
-                    // Title Text
+
                     Text("Bringing happiness with delicious food is our goal. 😋")
                         .font(.system(size: 28, weight: .bold))
                         .multilineTextAlignment(.center)
@@ -36,9 +36,9 @@ struct SignUpView: View {
                     
                     Spacer()
                     
-                    // Bottom Buttons
+
                     HStack {
-                        // Skip Button
+
                         NavigationLink(destination: ContentView()){
                             Text("Skip")
                                 .font(.headline)
@@ -52,9 +52,9 @@ struct SignUpView: View {
                                 )
                         }
                         
-                        // Start Button
+
                         Button(action: {
-                            // Start with email or phone action
+
                         }) {
                             Text("Start with email or phone")
                                 .font(.headline)
